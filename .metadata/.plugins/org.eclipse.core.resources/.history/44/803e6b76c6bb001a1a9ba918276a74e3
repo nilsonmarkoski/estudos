@@ -1,0 +1,15 @@
+import javax.swing.*;
+public class TesteSwing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//cria o quadro na thread de despacho do evento
+				SwingUtilities.invokeLater(new Runnable(){
+					public void run() {
+						new SwingDemo();
+					}
+				});
+
+	}
+
+}

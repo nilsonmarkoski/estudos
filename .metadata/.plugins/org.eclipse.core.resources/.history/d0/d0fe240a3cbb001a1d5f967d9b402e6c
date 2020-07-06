@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Exemplo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int c;
+		int d;
+		System.out.println("Digite um número inteiro.");
+		Scanner c = new Scanner(System.in);
+		System.out.println("Digite outro número inteiro.");
+		Scanner d = new Scanner(System.in);
+		
+		int soma = c + d;
+		
+		System.out.println("A soma de c + d é :"+ soma);
+	}
+
+}

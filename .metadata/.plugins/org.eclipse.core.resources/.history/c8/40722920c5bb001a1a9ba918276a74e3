@@ -1,0 +1,31 @@
+import javax.swing.*;
+public class SwingDemo {
+	
+	SwingDemo(){
+		//cria um conteiner JFrame
+		JFrame tela = new JFrame("Uma simples tela de aplicação.");
+		//Fornece o tamanho inicial para o quadro 
+		tela.setSize(900,400);
+		//encerra o programa quando o usuario fecha no x 
+		tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//cria um rótulo baseado em texto
+		JLabel jlab = new JLabel("Swing define um moderna tela GUI");
+		//adiciona o rótulo a tela 
+		tela.add(jlab);
+		//exibe o quadro 
+		tela.setVisible(true);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//cria o quadro na thread de despacho do evento
+		SwingUtilities.invokeLater(new Runnable(){
+			public void run() {
+				new SwingDemo();
+			}
+		});
+
+	}
+
+}

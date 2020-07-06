@@ -1,0 +1,34 @@
+package Aplication;
+import java.util.Locale;
+import java.util.Scanner;
+
+import Entities.Produto;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Produto product = new Produto();
+		System.out.println("Entre com dados do produto!");
+		System.out.print("Entre com o Nome do produto:");
+		product.name = sc.nextLine();
+		System.out.print("digite o preço:");
+		product.price = sc.nextDouble();
+		System.out.print("Digite a quantidade:");
+		product.quantity = sc.nextInt();
+		
+		System.out.println(product.name + ","+ product.price+","+ product.quantity);
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

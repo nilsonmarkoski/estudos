@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner dig = new Scanner(System.in);
+		Operacoes t = new Operacoes();
+		int saida ;
+		
+		do {
+			t.mostraMenu();
+			saida = dig.nextInt();
+			switch(saida){
+				case 1 : 
+					double a;
+					double b;
+					System.out.println("Digite primeiro número da soma:\n");
+					a = dig.nextDouble();
+					System.out.println("Digite segundo número da soma:\n");
+					b = dig.nextDouble();
+					double soma = t.soma(a, b);
+					System.out.printf("A soma d os dois números é: "+ soma + "\n");
+					
+				break;
+			}
+		}while(saida != 5);
+		
+		System.out.println("Programa Encerrado.");
+
+	}
+
+}
